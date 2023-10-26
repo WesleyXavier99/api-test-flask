@@ -1,0 +1,20 @@
+##criando o ambiente virtual
+#python -m venv nomedavenv
+
+##ativando o ambiente virtual
+#minha_env\Scripts\activate
+
+
+
+
+##adicionando decorator do flask que indica uma resposta para requisições GET/POST
+@app.route('/carros', methods=['GET'])
+@app.route('/carros', methods=['POST'])
+
+
+make response : deixa a resposta no padrão api
+
+jsonify: transforma a resposta num json
+
+request: pega o conteudo que vem do cliente na requisição
+
